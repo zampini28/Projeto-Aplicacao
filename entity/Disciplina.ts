@@ -6,7 +6,7 @@ export class Disciplina {
     @PrimaryColumn({ type: 'uuid' })
     id: string
     
-    @Column()
+    @Column({ unique: true })
     disciplina: string
 
     constructor() {

@@ -1,0 +1,79 @@
+  // make administrador
+        let administrador = new Administrador
+        administrador.usuario = Object.assign(new Usuario, {
+            nome: 'Fernanda Araujo Souza', 
+            rg: '49.296.479-8', 
+            cpf: '645.170.901-83', 
+            n_telefone: '(11) 99681-2557', 
+            email: 'FernandaAraujoSouza@gmail.com', 
+            usuario: 'FernandaSouza', 
+            nascimento: new Date('1996-01-31'), 
+            senha: 'eeFee6ohl'
+        })
+
+        // make aluno
+        let aluno = new Aluno()
+        aluno.matricula = '2009201003009-8'
+        aluno.administrador = administrador
+        aluno.usuario = Object.assign(new Usuario, {
+            nome: 'Luana Rocha Sousa', 
+            rg: '45.560.970-9', 
+            cpf: '551.296.556-56', 
+            n_telefone: '(11) 96845-6020', 
+            email: 'LuanaRochaSousa@gmail.com', 
+            usuario: 'LuanaRocha', 
+            nascimento: new Date('2008-06-12'), 
+            senha: 'ahShoop7ath'
+        })
+
+        // make professor
+        let professor = new Professor()
+        professor.disciplina = Object.assign(new Disciplina, {
+            nome: 'Matemática'
+        })
+        professor.usuario = Object.assign(new Usuario, {
+            nome: 'Júlio Costa Souza', 
+            rg: '47.166.673-3', 
+            cpf: '404.836.087-69', 
+            n_telefone: '(11) 97527-7296', 
+            email: 'JulioCostaSouza@gmail.com', 
+            usuario: 'JúlioCosta', 
+            nascimento: new Date('1991-04-28'), 
+            senha: 'oov7fu8I'
+        })
+
+        // make responsavel
+        let responsavel = new Responsavel()
+        responsavel.administrador = administrador
+        responsavel.usuario = Object.assign(new Usuario, {
+            nome: 'Breno Fernandes Rodrigues', 
+            rg: '45.392.117-4', 
+            cpf: '507.346.788-43', 
+            n_telefone: '(11) 94690-3040', 
+            email: 'BrenoFernandesRodrigues@gmail.com', 
+            usuario: 'Breno_Fernandes', 
+            nascimento: new Date('1951-07-30'), 
+            senha: 'iqu2dohPhai'
+        })
+
+
+
+                //dataSource.manager
+        //    .save(administrador)
+        //    .then(administrador => console.log('O administrador foi salvo.', administrador))
+        //    .catch(err => console.log('Não é possível salvar. Erro:', err))
+
+        //dataSource.manager
+        //    .save(aluno)
+        //    .then(aluno => console.log('O aluno foi salvo.', aluno))
+        //    .catch(err => console.log('Não é possível salvar. Erro:', err))
+
+        //dataSource.manager
+        //    .save(professor)
+        //    .then(professor => console.log('O administrador foi salvo.', professor))
+        //    .catch(err => console.log('Não é possível salvar. Erro:', err))
+
+        //dataSource.manager
+        //    .save(responsavel)
+        //    .then(responsavel => console.log('O administrador foi salvo.', responsavel))
+        //    .catch(err => console.log('Não é possível salvar. Erro:', err))

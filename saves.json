@@ -1,0 +1,12 @@
+{
+    "nome": "Fernanda Araujo Souza", 
+    "rg": "49.296.479-8", 
+    "cpf": "645.170.901-83", 
+    "n_telefone": "(11) 99681-2557", 
+    "email": "FernandaAraujoSouza@gmail.com", 
+    "usuario": "FernandaSouza", 
+    "nascimento": "1996-01-31", 
+    "senha": "eeFee6ohl"
+}
+
+{ nome, rg, cpf, n_telefone, email, usuario, nascimento, senha }

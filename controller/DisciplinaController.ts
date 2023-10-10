@@ -2,7 +2,7 @@ import 'reflect-metadata'
 import { Request, Response, NextFunction } from 'express'
 import { DisciplinaService } from '../service/DisciplinaService'
 
-export class AlunoController 
+export class DisciplinaController 
 {
 
     async inserir(request: Request, response: Response, next: NextFunction) 

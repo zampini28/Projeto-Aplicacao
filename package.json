@@ -21,6 +21,7 @@
   },
   "scripts": {
     "dev": "ts-node-dev app.ts",
-    "start": "ts-node app.ts"
+    "start": "ts-node app.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   }
 }

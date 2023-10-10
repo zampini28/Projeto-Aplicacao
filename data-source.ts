@@ -9,7 +9,8 @@ const options: DataSourceOptions = {
     database: "test",
     synchronize: true,
     logging: false,
-    entities: ['./entity/*.ts']
+    entities: ['./entity/*.ts'],
+    migrations: ['./migration/*.ts'],
 }
 
 export const dataSource = new DataSource(options)

@@ -8,5 +8,80 @@
     "nascimento": "1996-01-31", 
     "senha": "eeFee6ohl"
 }
+{
+    "nome": "Júlio Costa Souza", 
+    "rg": "47.166.673-3", 
+    "cpf": "404.836.087-69",
+    "email": "JulioCostaSouza@gmail.com", 
+    "usuario": "JúlioCosta", 
+    "nascimento": "1991-04-28", 
+    "bloqueado": true,
+    "senha": "oov7fu8I"
+}
+
+
+
+
+
+{
+    "nome": "Luana Rocha Sousa", 
+    "rg": "45.560.970-9", 
+    "cpf": "551.296.556-56",
+    "n_telefone": "(11) 96845-6020", 
+    "email": "LuanaRochaSousa@gmail.com", 
+    "usuario": "LuanaRocha",
+    "nascimento": "2008-06-12", 
+    "senha": "ahShoop7ath", 
+    "matricula": "2009201003009-8",
+    "administrador": "id_do_cadastrador"
+}
+
+{
+    "nome": "Breno Fernandes Rodrigues",
+    "rg": "45.392.117-4",
+    "cpf": "507.346.788-43",
+    "n_telefone": "(11) 94690-3040",
+    "email": "BrenoFernandesRodrigues@gmail.com",
+    "usuario": "Breno_Fernandes",
+    "nascimento": "1951-07-30",
+    "senha": "iqu2dohPhai",
+    "administrador": "id_do_cadastrador"
+}
+
+{
+    "nome": "Daniel Araujo Carvalho",
+    "rg": "45.392.179-3",
+    "cpf": "269.857.143-82",
+    "n_telefone": "(11) 95062-5064",
+    "email": "DanielAraujoCarvalho@gmail.com",
+    "usuario": "DanielAraujo_Carvalho",
+    "nascimento": "1989-04-19",
+    "senha": "Biezae4aer",
+    "administrador": "id_do_cadastrador"
+}
+
+{
+    "nome": "Luis Silva Pinto",
+    "rg": "52.606.404-2",
+    "cpf": "283.707.729-19",
+    "n_telefone": "(11) 92215-2205",
+    "email": "LuisSilvaPinto@gmail.com",
+    "usuario": "LuizSPinto",
+    "nascimento": "2008-10-22",
+    "senha": "cah9tah2Ei-6",
+    "disciplina": "Língua Portuguesa",
+}
+{
+    "nome": "Daniel Araujo Carvalho",
+    "rg": "45.392.179-3",
+    "cpf": "269.857.143-82",
+    "n_telefone": "(11) 95062-5064",
+    "email": "DanielAraujoCarvalho@gmail.com",
+    "usuario": "DanielAraujo_Carvalho",
+    "nascimento": "1989-04-19",
+    "senha": "Biezae4aer",
+    "disciplina": "Matemática",
+}
+
 
 { nome, rg, cpf, n_telefone, email, usuario, nascimento, senha }

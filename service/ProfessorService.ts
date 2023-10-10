@@ -2,11 +2,10 @@ import 'reflect-metadata'
 import { getProfessorRepository } from '../repository/ProfessorRepository'
 import { getUserRepository } from '../repository/UserRepository'
 import { Usuario } from '../entity/Usuario'
-import { Aluno } from '../entity/Aluno'
 import { hash } from 'bcryptjs'
-import { getAdminRepository } from '../repository/AdminRepository'
 import { Professor } from '../entity/Professor'
 import { getDisciplinaRepository } from '../repository/DisciplinaRepository'
+import { Disciplina } from '../entity/Disciplina'
 
 interface IProfessorRequest
 {
@@ -40,8 +39,9 @@ export class ProfessorService
             .catch(err => data.senha = undefined)
 
         const professor = new Professor()
-        professor.disciplina = await this.DisciplinaRepository.findOne({ where: { id: data.disciplina }})
+        professor.disciplina = Object.assign(new Disciplina, { disciplina: data.disciplina })
         professor.usuario = Object.assign(new Usuario, data)
+        
 
         return await this.ProfessorRepository
             .save(professor)

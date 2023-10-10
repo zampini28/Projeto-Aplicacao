@@ -1,10 +1,6 @@
 import 'reflect-metadata'
 import { getAlunoRepository } from '../repository/AlunoRepository'
 import { getUserRepository } from '../repository/UserRepository'
-import { Administrador } from '../entity/Administrador'
-import { Usuario } from '../entity/Usuario'
-import { Aluno } from '../entity/Aluno'
-import { hash } from 'bcryptjs'
 import { getAdminRepository } from '../repository/AdminRepository'
 import { getDisciplinaRepository } from '../repository/DisciplinaRepository'
 import { Disciplina } from '../entity/Disciplina'
@@ -59,12 +55,12 @@ export class DisciplinaService
 
         if (disciplina === null)
             return new Error('Essa disciplina não existe')
-        
-        const disciplina_id = disciplina.id;
+
 
         return await this.DisciplinaRepository
-            .update(disciplina_id, Object.assign(new Disciplina, { disciplina: disciplina.disciplina}))
-            .then(result => this.DisciplinaRepository.findOne({ where: { id: id }}))
+            .update(disciplina.id, Object.assign(new Disciplina, { id: undefined, disciplina: data.disciplina }))
+            .then(result => this.DisciplinaRepository.findOne({ where: { id: id }})
+                .then(result => result))
             .catch(err => new Error('Não foi possível atualizar aluno.'))
     }
 

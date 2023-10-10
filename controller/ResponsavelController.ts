@@ -2,7 +2,7 @@ import 'reflect-metadata'
 import { Request, Response, NextFunction } from 'express'
 import { ResponsavelService } from '../service/ResponsavelService'
 
-export class AlunoController 
+export class ResponsavelController 
 {
 
     async inserir(request: Request, response: Response, next: NextFunction) 
